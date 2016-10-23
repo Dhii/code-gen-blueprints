@@ -11,7 +11,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^5.3 | ^7.0"
+        "php": "^5.3 | ^7.0",
+        "dhii/code-gen-abstract": "dev-master"
     },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
@@ -28,5 +29,19 @@
             "Dhii\\Collection\\UnitTest\\": "test/unit",
             "Dhii\\Collection\\FuncTest\\": "test/functional"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/code-gen-abstract.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/blueprint"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/blueprint-abstract"
+        }
+    ]
 }

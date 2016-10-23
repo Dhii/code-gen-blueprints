@@ -4,9 +4,184 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0b451d107e2fc2468e7789f9a33a7460",
-    "content-hash": "0803a24490980c0f75567501c1e66004",
-    "packages": [],
+    "hash": "8daba35713724f51b16a0d88649ff312",
+    "content-hash": "aa2e90968ae610f2ff1000e70ddcd63d",
+    "packages": [
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "dhii/blueprint-abstract",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/blueprint-abstract.git",
+                "reference": "484b47dab338294491756007a09c420632bd3935"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/blueprint-abstract/zipball/484b47dab338294491756007a09c420632bd3935",
+                "reference": "484b47dab338294491756007a09c420632bd3935",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/blueprint-interface": "dev-master",
+                "php": "^5.3.9"
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Blueprint\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Dhii\\Blueprint\\UnitTest\\": "test/unit"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "An abstract implementation of the blueprint-builder design pattern.",
+            "support": {
+                "source": "https://github.com/Dhii/blueprint-abstract/tree/master",
+                "issues": "https://github.com/Dhii/blueprint-abstract/issues"
+            },
+            "time": "2016-09-15 00:30:31"
+        },
+        {
+            "name": "dhii/blueprint-interface",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/blueprint-interface.git",
+                "reference": "3dd8fda298e852d2309196742bc1d0310a99547d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/blueprint-interface/zipball/3dd8fda298e852d2309196742bc1d0310a99547d",
+                "reference": "3dd8fda298e852d2309196742bc1d0310a99547d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.9"
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Blueprint\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Dhii\\Blueprint\\UnitTest\\": "test/unit"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Muscat",
+                    "email": "miguelmuscat93@gmail.com"
+                },
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com"
+                }
+            ],
+            "description": "A standard library for the blueprint-builder design pattern.",
+            "keywords": [
+                "blueprint",
+                "builder"
+            ],
+            "support": {
+                "source": "https://github.com/Dhii/blueprint-interface/tree/master",
+                "issues": "https://github.com/Dhii/blueprint-interface/issues"
+            },
+            "time": "2016-09-14 14:29:22"
+        },
+        {
+            "name": "dhii/code-gen-abstract",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/code-gen-abstract.git",
+                "reference": "ff53f7b4b2a02f809dac5b22adecd2a67c47a3ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/code-gen-abstract/zipball/ff53f7b4b2a02f809dac5b22adecd2a67c47a3ab",
+                "reference": "ff53f7b4b2a02f809dac5b22adecd2a67c47a3ab",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "dhii/blueprint-abstract": "dev-master"
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-master",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\CodeGen\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Abstract base classes for CodeGen.",
+            "support": {
+                "source": "https://github.com/Dhii/code-gen-abstract/tree/master",
+                "issues": "https://github.com/Dhii/code-gen-abstract/issues"
+            },
+            "time": "2016-10-16 08:41:32"
+        }
+    ],
     "packages-dev": [
         {
             "name": "codeclimate/php-test-reporter",
@@ -2085,6 +2260,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dhii/code-gen-abstract": 20,
         "dhii/php-cs-fixer-config": 20,
         "codeclimate/php-test-reporter": 20
     },
